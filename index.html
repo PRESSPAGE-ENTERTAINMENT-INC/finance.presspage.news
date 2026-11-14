@@ -73,8 +73,12 @@
 
     <!-- Footer -->
     <footer class="w3-container w3-blue w3-padding-16 w3-center footer">
-        <p>PRESSPAGE ENTERTAINMENT INC &copy; 2018-2024 | <a href="https://terms-of-service.page" class="w3-text-white">Terms of Service</a> | <a href="https://privacy-policy.page" class="w3-text-white">Privacy Policy</a></p>
+        <p>PRESSPAGE ENTERTAINMENT INC &copy; 2018-<span id="year"></span> | <a href="https://terms-of-service.page" class="w3-text-white">Terms of Service</a> | <a href="https://privacy-policy.page" class="w3-text-white">Privacy Policy</a></p>
     </footer>
-
+    <script>
+        window.onload = function() {
+            document.getElementById("year").innerHTML = new Date().getFullYear();
+        }
+    </script>
 </body>
 </html>
