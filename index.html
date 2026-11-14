@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance by PRESSPAGE.NEWS</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+        }
+        .stock-quote {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .news-article {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="w3-container w3-blue w3-padding-16">
+        <h1 class="w3-center">Finance by PRESSPAGE.NEWS</h1>
+        <div class="w3-center">
+            <input class="w3-input w3-border w3-round" type="text" placeholder="Search by Company or Ticker..." style="max-width: 300px; display: inline-block;">
+            <button class="w3-button w3-green w3-round">Search</button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="w3-row w3-padding-32 w3-light-grey">
+        
+        <!-- Stock Quotes Section -->
+        <div class="w3-col l6 s12 w3-padding">
+            <div class="w3-card-4 w3-white w3-padding">
+                <h2 class="w3-text-blue"><a href="https://exemptliquiditymarket.exchange" target="_blank">Exempt Liquidity Market (ELMX) Exchange</a> Quotes [a NMS Exchange]</h2>
+                <div class="w3-container w3-padding">
+                    <!-- Example Stock Quote -->
+                    <div class="stock-quote w3-padding w3-border-bottom">
+                        <span>Company: XYZ Corp (XYZ)</span>
+                        <span class="w3-right">Price: $120.50</span>
+                    </div>
+                    <div class="stock-quote w3-padding w3-border-bottom">
+                        <span>Company: ABC Inc (ABC)</span>
+                        <span class="w3-right">Price: $85.75</span>
+                    </div>
+                    <!-- Additional stock quotes go here -->
+                </div>
+            </div>
+        </div>
+
+        <!-- News Section -->
+        <div class="w3-col l6 s12 w3-padding">
+            <div class="w3-card-4 w3-white w3-padding">
+                <h2 class="w3-text-blue">Latest Company News</h2>
+                <div id="articles" class="w3-container">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-blue w3-padding-16 w3-center footer">
+        <p>PRESSPAGE ENTERTAINMENT INC &copy; 2018-2024 | <a href="https://terms-of-service.page" class="w3-text-white">Terms of Service</a> | <a href="https://privacy-policy.page" class="w3-text-white">Privacy Policy</a></p>
+    </footer>
+
+</body>
+</html>
